@@ -28,7 +28,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
-     networks:
+    networks:
       - app-network
   webserver:
     depends_on:
